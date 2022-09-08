@@ -1,15 +1,24 @@
+
+
+
+
 int main()
 {
-	printf("a=");
+	
 	double a = 11.2;
-	a = a - 1;
-	
-	
-	int b = 11;
+	a = a + 3;
 
-	
-	printf("%lf\n", a);
-	printf("b=");
-	printf("%d\n", b);
+
+	int b = 11;
+	b = b + 1;
+
+	if (a > b){
+		printf("a=");
+		printf("%lf\n", a);
+	}
+	else{
+		printf("b=");
+		printf("%d\n", b);
+	};
 	return 0;
 }
