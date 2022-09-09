@@ -1,24 +1,17 @@
 
 
-
-
 int main()
 {
-	
-	double a = 11.2;
-	a = a + 3;
-
-
-	int b = 11;
-	b = b + 1;
-
-	if (a > b){
-		printf("a=");
-		printf("%lf\n", a);
+	int a = 0;
+	int b = 0;
+	int s = 0;
+	scanf("%d %d", &a, &b);
+	if (a < b){
+		s = a + b;
+		}
+	else{ s = a - b;
 	}
-	else{
-		printf("b=");
-		printf("%d\n", b);
-	};
+	printf("s = %d\n", s);
+	
 	return 0;
 }
