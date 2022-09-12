@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	int a = 0;
+    int b = 0;
+	
+	printf("你牛逼吗\n");
+	printf("回答我(1)\n");
+	scanf("%d", &a);
+	while (a != 1)
+	{
+		printf("小牛马\n");
+		scanf("%d", &a);
+	}
+	
+	if (a == 1)
+	{
+		printf("好，很有精神\n");
+		printf("输入666\n");
+		scanf("%d", &b);
+		while (b  != 666)
+		{
+			if(b < 666){
+				printf("小牛马：%d\n", b);
+			b++;}
+			  else{
+				  printf("小牛马：%d\n", b);
+								b--;
+
+			  }
+                   
+		}
+		printf("好！！！666\n");
+	}
+	
+
+
+
+
+	return 0; 
+}
