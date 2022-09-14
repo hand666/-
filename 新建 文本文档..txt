@@ -1,101 +1,47 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include<stdio.h>
 #include<string.h>
 
-float add(float x, float y)
-{
-	float z = 0;
-	z = x + y;
-	return z;
-}
-float min(float x, float y)
-{
-	float z = 0;
-	z = x - y;
-	return z;
-}
-float mul(float x, float y)
-{
-	float z = 0;
-	z = x * y;
-	return z;
-}
-float exc(float x, float y)
-{
-	float z = 0;
-	z = x / y;
-	return z;
-}
-int sen(int x, int y)
-{
-	int z = 0;
-	z = x % y;
-	return z;
-}
 int main()
 {
-	float a = 0;
-	float b = 0;
 	int c = 0;
-	
-	/*int e = min(a,b);
-	int f = mul(a,b);
-	int g = exc(a,b);*/
-	
-	printf("请选择类型：1.+, 2.-, 3.*, 4./ 5.%\n");
 	scanf("%d", &c);
-	while (c != 1 && c != 2 && c != 3 && c != 4 && c != 5)
+	/*while (c != 1 && c != 2 && c != 3 && c != 4 && c != 5)
 	{
 		printf("小牛马\n");
 		scanf("%d", &c);
+	}*/
+	switch (c)
+	{
+
+	case 1:
+		printf("金\n");
+		break;
+	case 2:
+		printf("木\n");
+		break;
+	case 3:
+		printf("水\n");
+		break;
+	case 4:
+		printf("火\n");
+		break;
+	case 5:
+		printf("土\n");
+		break;
+	//default:
+		
+		//printf("错误\n");
+		//scanf("%d", &c);
+		
+		//break;
+
+
+
+
+
+
 	}
-
-	
-		printf("请输入数字\n");
-		scanf("%f%f", &a, &b);
-		if (c == 1){
-
-			float d = add(a, b);
-			printf("%f\n", d);
-		}
-		else{
-			if (c == 2){
-				float e = min(a, b);
-				printf("%f\n", e);
-			}
-			else
-			{
-				if (c == 3){
-					float f = mul(a, b);
-					printf("%f\n", f);
-				}
-				else
-				{
-					if (c == 4){
-						float g = exc(a, b);
-						printf("%f\n", g);
-					}
-					else
-					{
-						int i = sen(a, b);
-						printf("%d\n", i);
-					}
-				}
-			}
-		}
-	
-		int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		char ch[6] = { 'a', 'b', 'c','j','k','\0' };
-		int h = 0;
-		while (h < 10){
-			printf("%d\t", arr[h]);
-			h++;
-		}
-		printf("%c\t\n", ch[0]);
-		printf("%d\n", sizeof arr[0]);
-		printf("%d\n", sizeof arr);
-		printf("!=%d\n", strlen(ch));
-		int xx = exc(sizeof arr , sizeof arr[0]);
-		printf("%d\n", xx);
-		printf("%c", ch[4]);
 	return 0;
-}
+} 
