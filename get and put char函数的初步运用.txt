@@ -1,0 +1,24 @@
+int main()
+{
+	char xx[ 20 ]={ 0 };
+	printf("请输入密码\n");
+	scanf("%s", xx);
+	printf("请确认密码(Y/N)\n");
+	getchar();
+	
+	while (getchar() != '\n')
+	{
+		;
+	}
+		int x = getchar();
+	if (x == 'Y')
+	{
+		printf("确认成功\n");
+
+	}
+	else
+	{
+		printf("确认失败\n");
+	}
+	return 0;
+}
