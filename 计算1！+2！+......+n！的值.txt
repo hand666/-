@@ -1,0 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	int n = 1;
+	int j = 0;
+	int f = 1;
+	int u = 0;
+	printf("输入一个不为0的正整数\n");
+	scanf("%d", &u);
+	while (n <= u)
+	{
+		f = n * f;
+		j = j + f;
+	    n++;	
+	}
+	printf("%d\n", j);
+	
+	
+	return 0;
+}
