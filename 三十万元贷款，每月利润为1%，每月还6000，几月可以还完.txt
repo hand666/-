@@ -1,0 +1,18 @@
+int main()
+{
+	float d = 300000;
+	float p = 6000;
+	float r = 0.01;
+	float h = 0;
+	float z = 0;
+	while (h <= 300000)
+	{
+		d = d - p + (d *r);
+		h = h + p - (d *r);
+		z++;
+	}
+	
+	printf("%f", z);
+
+	return 0;
+}
