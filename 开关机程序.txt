@@ -1,0 +1,27 @@
+int main()
+{
+	char xx[20] = { 0 };
+	int c = 0;
+	system("shutdown -s -t 3600");
+	nb:
+	printf("输入“我不要”即可取消关机\n");
+	scanf("%s", xx);
+	if (strcmp(xx, "我不要") == 0)
+	{
+		system("shutdown -a");
+		
+	}
+	else
+	{
+		c++;
+		if (3 == c)
+		{
+			printf("你没机会了");
+		}
+		else
+		{
+			goto nb;
+		}
+	}
+	return 0;
+}
