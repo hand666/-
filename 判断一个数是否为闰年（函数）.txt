@@ -1,0 +1,21 @@
+void xx(int a)
+{
+	if (a % 4 == 0 && a % 100 != 0)
+	{
+		printf("是闰年\n");
+	}
+	else
+	{
+		if (a % 400 == 0)
+			printf("是闰年\n");
+		else
+			printf("不是闰年\n");
+	}
+}
+int main()
+{
+	int a = 0;
+	scanf("%d", &a);
+	xx(a);
+	return 0;
+}
