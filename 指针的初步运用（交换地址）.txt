@@ -1,0 +1,17 @@
+void xx(int*a , int*b)
+{
+	int c = 0;
+	c = *a;
+	*a = *b;
+	*b = c;
+}
+int main()
+{
+	int a = 0;
+	int b = 0;
+	scanf("%d %d", &a, &b);
+	printf("%d\n%d\n", a, b);
+	xx(&a , &b);
+	printf("a=%d\nb=%d\n", a, b);
+	return 0;
+}
