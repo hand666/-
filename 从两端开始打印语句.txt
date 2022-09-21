@@ -1,0 +1,21 @@
+int main()
+{
+	char xx[] = "welcome to sichuang!!";
+	char nn[] = "#####################";
+	int z = 0;
+	int y = strlen(xx) - 1;
+	
+	while (strcmp(xx, nn) != 0)
+	{
+
+		nn[z] = xx[z];
+		nn[y] = xx[y];
+		printf {"%s\n", nn };
+		Sleep(1000);
+		system("cls");
+		z++;
+		y--;
+	}
+     printf {"%s\n", nn };
+	return 0;
+}
