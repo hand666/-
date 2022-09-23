@@ -1,0 +1,29 @@
+int main()
+{
+	int s = 0;
+	int c = 0;
+	srand((unsigned int)time(NULL));
+	cd();
+	do
+	{
+		printf("请选择: 1.paly\n \t2.exit\n");
+		scanf("%d", &s);
+			switch (s)
+			{
+			case 1:
+				printf("来猜数字吧\n");
+				printf("请输入数字\n");
+				game();
+				break;
+			case 2:
+				printf("已成功退出游戏\n");
+				c++;
+				break;
+			default:
+				printf("选择错误，请重新选择\n");
+				break;
+		}
+	} 
+	while (c == 0);
+	return 0;
+}
