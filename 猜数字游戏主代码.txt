@@ -1,0 +1,41 @@
+void game()
+{
+	int h = rand()%100 + 1;
+	//printf("%d\n", h);
+	int n = 0;
+	int b = 0;
+	while (1)
+	{
+		if (b > 5)
+		{
+			printf("猜太多次啦，失败了\n");
+                printf("正确数字是:%d\n", h);
+			printf("要再来一次吗\n");
+			break;
+		}
+		else
+		{
+			scanf("%d", &n);
+			if (n < h)
+			{
+				printf("太小了\n");
+				b++;
+			}
+			else
+			{
+				if (n > h)
+				{
+					printf("太大了\n");
+					b++;
+				}
+				else
+				{
+					printf("猜对了,数字是%d\n", h);
+					printf("再来一把吗\n");
+					break;
+				}
+			}
+		}
+
+	}
+}
