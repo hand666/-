@@ -1,0 +1,19 @@
+int xx(int a)
+{
+	
+	return ((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0));
+}
+int main()
+{
+	int a = 0;
+	scanf("%d", &a);
+	if (xx(a) == 1)
+	{
+		printf("是闰年");
+	}
+	else
+	{
+		printf("不是闰年");
+	}
+	return 0;
+}
