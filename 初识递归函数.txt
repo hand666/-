@@ -1,0 +1,14 @@
+void xx(int n)
+{
+	while (n > 0)
+	{ 
+		xx(n / 2);
+	}
+	printf("%d\t", n);
+}
+
+int main()
+{
+	xx(1234);
+	return 0;
+}
