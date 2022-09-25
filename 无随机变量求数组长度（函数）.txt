@@ -1,0 +1,18 @@
+int nn(char* n)
+{
+	
+	if (*n != '\0')
+	{
+		return 1 + nn(n + 1);
+	}
+	else
+	{
+		return 0;
+	}
+}
+int main()
+{
+	char xx[] = "114514";
+	printf("%d\n", nn(xx));
+	return 0;
+}
