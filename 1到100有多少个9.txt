@@ -1,0 +1,14 @@
+int main()
+{
+	int n = 0;
+	int r = 0;
+	for (n = 1; n < 101; n++)
+	{
+		if (n % 10 == 9)
+			r++;
+		if (n / 10 == 9)
+			r++;
+	}
+	printf("%d\n", r);
+	return 0;
+}
