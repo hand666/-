@@ -1,0 +1,32 @@
+int nn(char* n)
+{
+	int c = 0;
+	while (*n != '\0')
+	{
+		c++;
+		*n++;
+	}
+	return c;
+		
+}
+char xx(char* n)
+{
+	int z = 0;
+	int y = nn(n) - 1;
+	while (z < y)
+	{
+		char b = n[z];
+		n[z] = n[y];
+		n[y] = b;
+		z++;
+		y--;
+	}
+	return *n;
+}
+int main()
+{
+	char abc[] = "abcdefgh";
+	xx(abc);
+	printf("%s", abc);
+	return 0;
+}
