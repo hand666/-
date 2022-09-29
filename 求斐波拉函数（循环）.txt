@@ -1,0 +1,21 @@
+int xx(int n)
+{
+	int a = 1;
+	int b = 1;
+	int c = 1;
+	while (n > 2)
+	{
+		c = a + b;
+		a = b;
+		b = c;
+		n--;
+	}
+	return c;
+}
+int main()
+{
+	int a = 0;
+	scanf("%d", &a);
+	printf("%d\n", xx(a));
+	return 0;
+}
