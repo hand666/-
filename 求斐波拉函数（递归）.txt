@@ -1,0 +1,16 @@
+int xx(int n)
+{
+	if (n < 3)
+	{
+		return 1;
+	}
+	else
+		return xx(n - 1) + xx(n - 2);
+}
+int main()
+{
+	int a = 0;
+	scanf("%d", &a);
+	printf("%d\n", xx(a));
+	return 0;
+}
