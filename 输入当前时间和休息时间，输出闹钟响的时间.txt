@@ -1,0 +1,19 @@
+int main() {
+    int a, b, c;
+    scanf("%d:%d %d",&a,&b,&c);
+    int d = c/60;
+    int e = c%60;
+    int f = a+d;
+    int g = b+e;
+    if(g>60)
+    {
+        f++;
+        g-=60;
+    }
+    while(f > 24)
+    {
+        f-=24;
+    }
+    printf("%02d:%02d",f,g);
+    return 0;
+}
