@@ -1,0 +1,34 @@
+void px(int* arr,int i)
+{
+	while (1)
+	{
+		int a = 0;
+		int n = 0;
+		for (n = 0; n <= i - 2; n++)
+		{
+			if(arr[n] > arr[n + 1])
+			{
+				int c = arr[n];
+				arr[n] = arr[n + 1];
+				arr[n + 1] = c;
+				a++;
+			}
+		}
+		if (a == 0)
+			break;
+	}
+}
+int main()
+{
+	int a,b, c, d, e, f, g, h, j, k;
+	scanf("%d%d%d%d%d%d%d%d%d%d", &a, &b, &c, &d, &e, &f, &g, &h, &j, &k);
+	int arr[] = { a, b, c, d, e, f, g, h, j, k, };
+	int n = sizeof(arr) / sizeof(arr[0]);
+	int i = 0;
+	px(arr,n);
+	for (i = 0; i <= n-1; i++)
+	{
+		printf("arr[%d] = %d\n", i, arr[i]);
+	}
+	return 0;
+}
