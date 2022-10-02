@@ -1,0 +1,36 @@
+int main()
+{
+	int c = 0;
+	int x = 0;
+	char xx[20] = { 0 };
+	
+	scanf("%s", xx);
+	while (c < 3)
+	{
+
+		if (strcmp(xx,"123456") == 0)
+		{
+			printf("您已成功登录\n");
+			break;
+		}
+		else
+		{
+			if (c == 2)
+			{
+				printf("您已无法登录\n");
+				break;
+			}
+			else
+			{
+				printf("请重新输入\n");
+				scanf("%s", xx);
+				c++;
+			}
+
+		}
+
+	}
+
+	return 0;
+
+}
