@@ -1,0 +1,31 @@
+int main() {
+	long long a, b, c, d,e,f;
+	scanf("%d %d", &a, &b);
+	if (a > b)
+	{
+		c = b;
+		d = a;
+	}
+	else
+	{
+		c = a;
+		d = b;
+	}
+	e = c;
+	f = d;
+	if(a%c != 0 || b%c != 0)
+	{
+		while (c%e != 0 || d%e != 0)
+		{
+			e = a%b;
+			a = b;
+			b = e;
+		}
+	}
+	if(d % c != 0)
+	{
+		f = c*d / e;
+	}  
+	printf("%lld", e + f);
+	return 0;
+}
