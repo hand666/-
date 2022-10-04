@@ -1,0 +1,24 @@
+ int main()
+{
+	int a, b, c = 0, d = 0;
+	scanf("%d", &a);
+	while (a>0)
+	{
+		if (a % 10 % 2 == 0)
+		{
+			b = 0;
+			c += b*pow(10.0, d);
+		}
+		else
+		{
+			b = 1;
+			c += b*pow(10.0, d);
+		}
+		if (a < 9)
+			break;
+		a /= 10;
+		d++;
+	}
+	printf("%d", c);
+   return 0;
+}
