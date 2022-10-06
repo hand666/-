@@ -1,0 +1,9 @@
+int main() {
+    int a, b;
+    while(scanf("%d",&a)!=EOF){
+    if(a>=60)
+    printf("Pass\n");
+    else
+    printf("Fail");}
+    return 0;
+}
