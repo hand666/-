@@ -1,0 +1,16 @@
+int main()
+{
+	int a,b,c=0;
+	scanf("%d", &a);
+	while (a > 0)
+	{
+		b = a & 1;
+		if (b == 1)
+		{
+			c++;
+		}
+		a = a >> 1;
+	}
+	printf("%d\n", c);
+	return 0;
+}
