@@ -1,0 +1,13 @@
+int main() {
+    char a,b;
+    while(scanf("%c", &a)!=EOF)
+    {
+        if(a=='A'||a=='a'||a=='E'||a=='e'||a=='I'||a=='i'||a=='O'||a=='o'||a=='U'||a=='u')
+        printf("Vowel\n");
+        else
+        printf("Consonant\n");
+        getchar();
+    }
+   
+    return 0;
+}
