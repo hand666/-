@@ -1,0 +1,14 @@
+int main() {
+    int a, b,c=0,d=0;
+    for(b=0;b<10;b++)
+    {
+        scanf("%d",&a);
+        if(a>0)
+        c++;
+        else
+        d++;
+    }
+    printf("positive:%d\n",c);
+    printf("negative:%d\n",d);
+    return 0;
+}
