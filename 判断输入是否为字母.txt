@@ -1,16 +1,17 @@
-int main()
-{
-    int ch=0;
-    while((ch=getchar())!=EOF)
-    {
+int main() {
+    char a, b;
+    while (scanf("%c", &a) != EOF) { 
+        
         getchar();
-        if((ch>='A'&&ch<='Z')||(ch>='a'&&ch<='z'))
+        if(a>='a' && a<='z' || a>='A' && a<='Z')
         {
-            printf("YES\n");
+            printf("%c is an alphabet.\n", a);
         }
         else
         {
-            printf("NO");
+            printf("%c is not an alphabet.\n", a);
         }
+        
     }
+    return 0;
 }
