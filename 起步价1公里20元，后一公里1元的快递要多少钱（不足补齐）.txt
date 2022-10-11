@@ -1,0 +1,23 @@
+int main() {
+    float a;
+    char b;
+    int c;
+    scanf("%f %c",&a,&b);
+    c=a;
+    if(a-c!=0)
+    {
+        c++;
+    }
+    if(c)
+    {
+        if(b=='y')
+        {
+            printf("%d",24+c);
+        }
+        else
+        {
+            printf("%d",19+c);
+        }
+    }
+    return 0;
+}
