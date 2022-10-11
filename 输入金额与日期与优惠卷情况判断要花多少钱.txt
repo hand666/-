@@ -1,0 +1,32 @@
+int main() {
+    int  b, c ,d;
+    float a,e;
+   scanf("%f %d %d %d", &a, &b, &c, &d);
+   if(b==c&&b==11)
+   {
+       e=a*0.7;
+        if(d)
+        {
+            e-=50;
+        }
+        if(e<0)
+        e=0;
+        printf("%0.2f",e);
+   }
+   if(b==c&&b==12)
+   {
+       e=a*0.8;
+         if(d)
+        {
+            e-=50;
+        }
+        if(e<0)
+        e=0;
+        printf("%0.2f",e);
+   }
+   if(b!=c)
+   {
+       printf("%0.2f",a);
+   }
+    return 0;
+}
