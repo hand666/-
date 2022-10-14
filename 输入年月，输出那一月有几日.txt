@@ -1,0 +1,34 @@
+int main() {
+    int a, b, c;
+    while(scanf("%d %d",&a,&b)!=EOF)
+    {
+        if(a%400==0)
+        {
+            c=29;
+        }
+        else
+        {
+            if(a%4==0 && a%100!=0)
+            {
+                c=29;
+            }
+            else
+            {
+                c=28;
+            }
+        }
+        if(b==1 || b==3 || b==5 || b==7 || b==8 || b==10 || b==12)
+            {
+                printf("31\n");
+            }
+            else if(b==2)
+            {
+                printf("%d\n",c);
+            }
+            else
+            {
+                printf("30\n");
+            }
+    }
+    return 0;
+}
