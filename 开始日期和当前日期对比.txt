@@ -1,0 +1,37 @@
+int main() {
+    int a, b, c, d, e, f;
+    scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+    if(a<d)
+    {
+        printf("yes");
+    }
+    else
+    {
+        if(a==d)
+        {
+            if(b<e)
+            {
+                printf("yes");
+            }
+            else
+            {
+                if(b==e)
+                {
+                    if(c<=f)
+                    printf("yes");
+                    else
+                    printf("no");
+                }
+                else
+                {
+                    printf("no");
+                }
+            }
+        }
+        else
+        {
+            printf("no");
+        }
+    }
+    return 0;
+}
