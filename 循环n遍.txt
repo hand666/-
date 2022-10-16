@@ -1,0 +1,8 @@
+int main() {
+    int a, b;
+    for(b=0,scanf("%d",&a);b<a;b++)
+    {
+        printf("Happy new year!Good luck!\n");
+    }
+    return 0;
+}
