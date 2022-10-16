@@ -1,0 +1,10 @@
+int main() {
+    int a;
+    long long b=0;
+    for(scanf("%d",&a);a>0;a--)
+    {
+        b+=a;
+    }
+    printf("%lld",b);
+    return 0;
+}
