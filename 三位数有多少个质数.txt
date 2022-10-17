@@ -1,0 +1,21 @@
+int main() {
+	int a, b = 0,d=0;
+	for (a = 100; a<1000; a++)
+	{
+		for (int c = 2; c <= sqrt(a); c++)
+		{
+			if (a%c == 0)
+			{
+				b++;
+				break;
+			}
+		}
+		if (b == 0)
+		{
+			d++;
+		}
+        b=0;
+	}
+	printf("%d", d);
+	return 0;
+}
