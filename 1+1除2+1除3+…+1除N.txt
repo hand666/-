@@ -1,0 +1,11 @@
+int main() {
+	int  b;
+	double a,c = 0;
+	scanf("%d", &b);
+	for (a = 1.0; a <= b; a++)
+	{
+		c += 1/a;
+	}
+	printf("%lf", c);
+	return 0;
+}
