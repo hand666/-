@@ -1,0 +1,25 @@
+
+int main() {
+    int a, b, i;
+    float c;
+    int arr[7];
+   while((scanf("%d %d %d %d %d %d %d",arr,arr+1,arr+2,arr+3,arr+4,arr+5,arr+6)) != EOF)
+    {
+        a=arr[0];
+        b=arr[0];
+        for(c=0,i=0;i<7;i++)
+        {
+            if(arr[i]>a)
+            {
+                a=arr[i];
+            }
+            if(arr[i]<b)
+            {
+                b=arr[i];
+            }
+            c+=arr[i];
+        }
+        printf("%.2f\n",(c-a-b)/5.0);
+    }
+    return 0;
+}
