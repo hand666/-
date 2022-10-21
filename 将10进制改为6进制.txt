@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+	int a, c = 0;
+	scanf("%d", &a);
+    long long b=0;
+	while (a != 0)
+	{
+		b += (a % 6)*pow(10, c);
+		a = a / 6;
+		c++;
+	}
+	printf("%lld", b);
+	return 0;
+}
