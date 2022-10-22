@@ -1,0 +1,14 @@
+int main() {
+	int a, b = 0, c=1, i, n;
+	scanf("%d", &a);
+	for (n = 1, i = 1; i <= a;n++)
+	{
+		for (c = 1; c <= n&&i <= a; c++)
+		{
+			b += n;
+			i++;
+		}
+	}
+	printf("%d", b);
+	return 0;
+}
