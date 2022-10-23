@@ -1,0 +1,15 @@
+int main() {
+    int a, b, c;
+    while (scanf("%d", &a) != EOF)
+	{
+		for (b = a; b>0; b--)
+		{
+			for (c = b; c>0; c--)
+			{
+				printf("* ");
+			}
+			printf("\n");
+		}
+	}
+    return 0;
+}
