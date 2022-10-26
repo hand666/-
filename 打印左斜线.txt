@@ -1,0 +1,17 @@
+int main() {
+    int a, b, c;
+    while(scanf("%d",&a)!=EOF)
+    {
+        for(c=a;c>0;c--)
+        {
+            for(b=1;b<=c;b++)
+            {
+                if(b==c)
+                printf("*\n");
+                else
+                printf(" ");
+            }
+        }
+    }
+    return 0;
+}
