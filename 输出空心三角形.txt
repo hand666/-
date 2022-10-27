@@ -1,0 +1,22 @@
+int main() {
+    int a, b, c;
+    while(scanf("%d",&a)!=EOF)
+    {
+        for(b=1;b<=a;b++)
+        {
+            for(c=1;c<=a;c++)
+            {
+                if(c==1||b==a||c==b)
+                {
+                    printf("* ");
+                }
+                else
+                {
+                    printf("  ");
+                }
+            }
+            printf("\n");
+        }
+    }
+    return 0;
+}
