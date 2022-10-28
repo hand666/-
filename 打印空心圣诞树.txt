@@ -1,0 +1,55 @@
+int main() {
+	int a, b, c, d, e, f, n;
+	while (scanf("%d", &a) != EOF)
+	{
+		d = 0;
+		e = 0;
+		f = 0;
+		for (c = 0; c<3 * a; c++)
+		{
+			for (b = 0; b<3 * a - 1 - c; b++)
+			{
+				printf(" ");
+			}
+			d %= 3;
+			if (d == 0)
+			{
+				e++;
+			}
+			for (b = 0; b<e; b++)
+			{
+				for (n = 0; n <= d; n++)
+				{
+					printf("* ");
+				}
+				for (n = 0; n<4 - f; n++)
+				{
+					printf(" ");
+				}
+			}
+			if (e>1)
+			{
+				if (f == 4)
+				{
+					f = 0;
+				}
+				else
+				{
+					f += 2;
+				}
+			}
+			printf("\n");
+			d++;
+		}
+		for (b = 0; b<a; b++)
+		{
+			for (c = 0; c<3 * a - 1; c++)
+			{
+				printf(" ");
+			}
+			printf("*");
+			printf("\n");
+		}
+	}
+	return 0;
+}
