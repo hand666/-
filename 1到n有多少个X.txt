@@ -1,0 +1,16 @@
+int main() {
+    int a, b, c=0,d,e;
+    scanf("%d %d",&a,&d);
+    for(b=1;b<=a;b++)
+    {
+        for(e=b;e>0;e/=10)
+        {
+            if(e%10==d)
+            {
+                c++;
+            }
+        }
+    }
+    printf("%d",c);
+    return 0;
+}
