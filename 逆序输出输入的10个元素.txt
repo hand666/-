@@ -1,0 +1,14 @@
+int main() {
+    int a, b;
+    int arr[10];
+    for(b=0;b<10;b++)
+    {
+        scanf("%d",&a);
+        arr[b]=a;
+    }
+    for(b=9;b>=0;b--)
+    {
+        printf("%d ",arr[b]);
+    }
+    return 0;
+}
