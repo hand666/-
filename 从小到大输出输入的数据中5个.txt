@@ -1,0 +1,30 @@
+int main() {
+    int a, b, i, n;
+    int arr[50]={0};
+    scanf("%d",&a);
+    for(b=0;b<a;b++)
+    {
+        scanf("%d",&arr[b]);
+    }
+    for(i=0;i<a;i++)
+    {
+        int p = 0;
+        for(n=0;n<a-i;n++)
+        {
+            if(arr[n]>arr[n+1])
+            {
+                b=arr[n+1];
+                arr[n+1]=arr[n];
+                arr[n]=b;
+                p=1;
+            }
+        }
+        if(p==0)
+        break;
+    }
+    for(b=a;b>a-5;b--)
+    {
+        printf("%d ",b[arr]);
+    }
+    return 0;
+}
