@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int n,m,nx[2000]={0};
+    int i,j,tmp;
+    scanf("%d %d\n",&n,&m); 
+    for(i=0;i<n+m;i++){     
+        scanf("%d",&nx[i]);
+    }
+    for(i=0;i<n+m;i++){         
+        for(j=i+1;j<n+m;j++){
+            if(nx[i]>nx[j]){
+                tmp=nx[i];
+                nx[i]=nx[j];
+                nx[j]=tmp;
+            }
+        }
+        printf("%d ",nx[i]);
+    }
+    return 0;
+}
