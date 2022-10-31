@@ -1,0 +1,28 @@
+int main() {
+    int a, b, c, d, n=0;
+    int arr[50];
+    scanf("%d",&a);
+    for(b=0;b<a;b++)
+    {
+        scanf("%d",&arr[b]);
+    }
+    scanf("%d",&c);
+    for(b=0;b<a-n;b++)
+    {
+        if(c==arr[b])
+        {
+            n++;
+            for(d=b;d<a-n;d++)
+            {
+                arr[d]=arr[d+1];
+            }
+            b--;
+        }
+    }
+    for(b=0;b<a-n;b++)
+    {
+        printf("%d ",arr[b]);
+    }
+    
+    return 0;
+}
