@@ -1,0 +1,27 @@
+int main() {
+	int a, b, c, c1=1, c2=1, i, n;
+	int arr[10][10];
+	scanf("%d%d", &a, &b);
+	for (i = 0; i<a; i++)
+	{
+		for (n = 0; n<b; n++)
+		{
+			scanf("%d", &arr[i][n]);
+		}
+	}
+	c = arr[0][0];
+	for (i = 0; i<a; i++)
+	{
+		for (n = 0; n<b; n++)
+		{
+			if (c<arr[i][n])
+			{
+				c = arr[i][n];
+				c1 = i + 1;
+				c2 = n + 1;
+			}
+		}
+	}
+	printf("%d %d", c1, c2);
+	return 0;
+}
