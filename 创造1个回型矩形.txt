@@ -1,0 +1,28 @@
+int main() {
+    int a, b=1, c=0, i=0, n=0;
+    int arr[19][19];
+    scanf("%d",&a);
+    int c1=a-1;
+    while(b<=a*a)
+    {
+        for(i=c;i<=c1;i++)
+        arr[c][i]=b++;
+        for(n=c+1;n<=c1;n++)
+        arr[n][c1]=b++;
+        for(i=c1-1;i>=c;i--)
+        arr[c1][i]=b++;
+        for(n=c1-1;n>=c+1;n--)
+        arr[n][c]=b++;
+        c++;
+        c1--;
+    }
+    for(i=0;i<a;i++)
+    {
+        for(n=0;n<a;n++)
+        {
+            printf("%d ",arr[i][n]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
