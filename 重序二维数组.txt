@@ -1,0 +1,21 @@
+int main() {
+    int a, b, i, n;
+    int arr[10][10];
+    scanf("%d %d",&a,&b);
+    for(i=0;i<a;i++)
+    {
+        for(n=0;n<b;n++)
+        {
+            scanf("%d",&arr[i][n]);
+        }
+    }
+    for(i=0;i<a;i++)
+    {
+        for(n=0;n<b;n++)
+        {
+            printf("%d ",arr[i][n]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
