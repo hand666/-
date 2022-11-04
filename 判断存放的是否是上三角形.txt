@@ -1,0 +1,19 @@
+int main() {
+    int a, i, n;
+    int arr[10][10];
+    scanf("%d",&a);
+    for(i=0;i<a;i++)
+    {
+        for(n=0;n<a;n++)
+        {
+            scanf("%d",&arr[i][n]);
+            if(i>n&&arr[i][n]!=0)
+            {
+                printf("NO");
+                return 0;
+            }
+        }
+    }
+    printf("YES");
+    return 0;
+}
