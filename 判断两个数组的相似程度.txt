@@ -1,0 +1,28 @@
+int main() {
+    int a, b, c, i, n;
+    float d=0;
+    int arr[100][100];
+    scanf("%d %d",&a,&b);
+    for(i=0;i<a;i++)
+    {
+        for(n=0;n<b;n++)
+        {
+            scanf("%d",&c);
+            arr[i][n]=c;
+        }
+    }
+    for(i=0;i<a;i++)
+    {
+        for(n=0;n<b;n++)
+        {
+            scanf("%d",&c);
+            if(arr[i][n]==c)
+            {
+                d++;
+            }
+        }
+    }
+    d=d/(a*b)*100;
+    printf("%.2f",d);
+    return 0;
+}
