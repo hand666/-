@@ -1,0 +1,46 @@
+int main() {
+    int a, b, c, k, i, n, a1, b1;
+    char t=0;
+    int arr[10][10];
+    scanf("%d %d",&a,&b);
+    for(i=0;i<a;i++)
+    {
+        for(n=0;n<b;n++)
+        {
+            scanf("%d",&arr[i][n]);
+        }
+    }
+    scanf("%d",&c);
+    for(k=0;k<c;k++)
+    {
+        getchar();
+        scanf("%c %d %d", &t, &a1, &b1);
+        if (t=='r')
+        {
+            for(i=0;i<b;i++)
+            {
+                n=arr[a1-1][i];
+                arr[a1-1][i]=arr[b1-1][i];
+                arr[b1-1][i]=n;
+            }
+        }
+        if(t=='c')
+        {
+            for(i=0;i<a;i++)
+            {
+                n=arr[i][a1-1];
+                arr[i][a1-1]=arr[i][b1-1];
+                arr[i][b1-1]=n;
+            }
+        }
+    }
+    for(i=0;i<a;i++)
+    {
+        for(n=0;n<b;n++)
+        {
+            printf("%d ",arr[i][n]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
