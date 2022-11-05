@@ -1,0 +1,30 @@
+int main() {
+    int a,i,n,start=0;
+    long long b=1;
+    int arr[1000][1000];
+    scanf("%d",&a);
+    while(b<=a*a)
+    {
+        for(i=start,n=0;i>=0;i--,n++)
+        {
+            if(i<a&&n<a)
+            arr[i][n]=b++;
+        }
+        start++;
+        for(n=start,i=0;n>=0;i++,n--)
+        {
+            if(i<a&&n<a)
+            arr[i][n]=b++;
+        }
+        start++;
+    }
+    for(i=0;i<a;i++)
+    {
+        for(n=0;n<a;n++)
+        {
+            printf("%d ",arr[i][n]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
