@@ -1,0 +1,46 @@
+int main() {
+    int a=0, b=100, c, d=0, i, n;
+    char ch[100];
+    scanf("%s",ch);
+    
+    
+    for(i=0;i<strlen(ch);i++)
+    {
+        c=0;
+        for(n=0;n<strlen(ch);n++)
+        {
+            if(ch[i]==ch[n])
+            {
+                c++;
+            }
+        }
+        if(a<c)
+        {
+            a=c;
+        }
+        if(b>c)
+        {
+            b=c;
+        }
+    }
+    c=a-b;
+    for(i=2;i<sqrt(c);i++)
+    {
+        if(c%i==0)
+        {
+            d=1;
+            break;
+        }
+    }
+    if(c>1&&d!=1)
+    {
+        printf("Lucky Word\n");
+        printf("%d\n", c);
+    }
+    else
+    {
+        printf("No Answer\n");
+        printf("0\n");
+    }
+    return 0;
+}
