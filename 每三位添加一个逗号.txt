@@ -1,0 +1,22 @@
+int main() {
+    int a, b=0, i=2, n;
+    long long c;
+    int arr[10];
+    scanf("%lld",&c);
+    for(n=0;c>0;n++)
+    {
+        arr[n]=c%10;
+        c/=10;
+    }
+    a=n;
+    for(n=n;n>0;n--)
+    {
+        if(b%3==a%3&&b!=0&&a>3)
+        {
+            printf(",");
+        }
+        printf("%d",arr[n-1]);
+        b++;
+    }
+    return 0;
+}
