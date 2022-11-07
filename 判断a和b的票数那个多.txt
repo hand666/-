@@ -1,0 +1,25 @@
+int main() {
+    int a, b=0,c=0;
+    char n[100];
+    scanf("%s",n);
+    for(a=0;n[a]!='0';a++)
+    {
+        if(n[a]=='A')
+        {
+            c++;
+        }
+        else
+        {
+            b++;
+        }
+    }
+    if(c==b)
+    {
+        printf("E");
+    }
+    else
+    {
+        printf("%c",c>b?'A':'B');
+    }
+    return 0;
+}
