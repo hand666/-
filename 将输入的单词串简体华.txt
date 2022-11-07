@@ -1,0 +1,15 @@
+int main() {
+	char str[51] = { 0 };
+	while (scanf("%50s", str) != EOF)
+	{
+		if (str[0] >= 'A' && str[0] <= 'Z')
+		{
+			printf("%c", str[0]);
+		}
+		else
+		{
+			printf("%c", str[0] - 32);
+		}
+	}
+	return 0;
+}
