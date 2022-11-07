@@ -1,0 +1,35 @@
+void fanzhuang(char* a, char* b)
+{
+	while (b > a)
+	{
+		char t = *a;
+		*a = *b;
+		*b = t;
+		b--;
+		a++;
+	}
+}
+int main()
+{
+	int i, n;
+	char ch[100];
+	gets(ch);
+	int ret = strlen(ch);
+	fanzhuang(ch, ch+ret-1);
+	char* start = ch;
+	while (*start)
+	{
+		char* end = start;
+		while (*end != ' '&&*end != '\0')
+		{
+			end++;
+		}
+		fanzhuang(start, end - 1);
+		if (*end != '\0')
+			start = end + 1;
+		else
+			start = end;
+	}
+	printf("%s\n", ch);
+	return 0;
+}
