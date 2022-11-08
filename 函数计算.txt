@@ -1,0 +1,23 @@
+int max3(int a, int b, int c)
+{
+	int arr[3] = { a, b, c };
+	int i = arr[0];
+	for (int n = 0; n<=2; n++)
+	{
+		if (arr[n]>i)
+		{
+			i = arr[n];
+		}
+	}
+	return i;
+}
+int main() {
+	int a, b, c;
+	float i, n, t;
+	scanf("%d %d %d", &a, &b, &c);
+	i = max3(a + b, b, c);
+	n = max3(a, b + c, c);
+	t = max3(a, b, b + c);
+	printf("%.2f", i / (n + t));
+	return 0;
+}
