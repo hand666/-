@@ -1,0 +1,28 @@
+void panduang(int i, int* n)
+{
+    int a = 2;
+    int c = 0;
+    for(a=2;a<=sqrt(i);a++)
+    {
+        if(i%a==0)
+        {
+            c = 1;
+            break;
+        }
+    }
+    if(c==0)
+    {
+        *n+=i;
+    }
+}
+int main() {
+    int a, b;
+    int i, n=0;
+    scanf("%d %d",&a,&b);
+    for(i=a;i<=b;i++)
+    {
+        panduang(i,&n);
+    }
+    printf("%d",n);
+    return 0;
+}
