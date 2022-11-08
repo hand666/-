@@ -1,0 +1,22 @@
+void panduang(int i,int*n)
+{
+    int a = 0;
+    while(i>0)
+    {
+        a+=i%10;
+        i/=10;
+    }
+    if(a%5==0)
+    *n=*n+1;
+}
+int main() {
+    int a, b, c;
+    int i, n=0;
+    scanf("%d %d",&a, &b);
+    for(i=a;i<=b;i++)
+    {
+        panduang(i,&n);
+    }
+    printf("%d",n);
+    return 0;
+}
