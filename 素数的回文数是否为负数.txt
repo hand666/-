@@ -1,0 +1,31 @@
+int main() {
+    int a;
+    long long b;
+    int i=0, n=0;
+    scanf("%d",&a);
+    b=a;
+    while(a>9)
+    {
+        a/=10;
+        i++;
+        b*=10;
+        b+=a%10;
+    }
+    for(i=2;i<sqrt(b);i++)
+    {
+        if(b%i==0)
+        {
+            n=1;
+            break;
+        }
+    }
+    if(n)
+    {
+        printf("noprime");
+    }
+    else
+    {
+        printf("prime");
+    }
+    return 0;
+}
