@@ -1,0 +1,35 @@
+int main() {
+    int a, b, c=0, d=0, e=0;
+    int i, n;
+    int start=0,end=0;
+    int arr[100];
+    scanf("%d %d",&a,&b);
+    for(i=0;i<a;i++)
+    {
+        scanf("%d",&n);
+        c+=n;
+    }
+    for(i=0;i<b;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(n=0;n<b;n++)
+    {
+        d=0;
+        for(i=n;i<b;i++)
+        {
+            d+=arr[i];
+            if(abs(d-c)<abs(e-c))
+            {
+                e=d;
+                start=n;
+                end=i;
+            }
+        }
+    }
+    for(i=start;i<=end;i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    return 0;
+}
