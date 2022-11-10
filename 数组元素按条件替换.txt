@@ -1,0 +1,19 @@
+int main() {
+	int a, b;
+	char a1, a2, a3, a4;
+	int i, n;
+	char ch[100];
+	scanf("%d", &a);
+	getchar();
+	scanf("%c %c %c %c", &a1, &a2, &a3, &a4);
+	scanf("%s", ch);
+	for (b = 0; b<a; b++)
+	{
+		if (ch[b] == a1)
+			ch[b] = a2;
+		if (ch[b] == a3)
+			ch[b] = a4;
+		printf("%c", ch[b]);
+	}
+	return 0;
+}
