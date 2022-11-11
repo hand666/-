@@ -1,0 +1,11 @@
+int main() {
+    int a, b;
+    long long n = 1;
+    scanf("%d",&a);
+    for(b=1;b<=a;b++)
+    {
+        n*=b;
+    }
+    printf("%lld",n);
+    return 0;
+}
