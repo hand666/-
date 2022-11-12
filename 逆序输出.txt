@@ -1,0 +1,15 @@
+int main() {
+    int a, b;
+    int arr[1000];
+    scanf("%d",&a);
+    for(b=0;a>0;b++)
+    {
+        arr[b]=a%10;
+        a/=10;
+    }
+    for(a=0;a<b;a++)
+    {
+        printf("%d",arr[a]);
+    }
+    return 0;
+}
